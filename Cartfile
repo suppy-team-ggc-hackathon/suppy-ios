@@ -1,0 +1,5 @@
+github "yannickl/QRCodeReader.swift" >= 9.0.1
+github "Alamofire/Alamofire" ~> 4.7
+github "yenom/BitcoinKit"
+github "kishikawakatsumi/KeychainAccess"
+github "hackiftekhar/IQKeyboardManager"

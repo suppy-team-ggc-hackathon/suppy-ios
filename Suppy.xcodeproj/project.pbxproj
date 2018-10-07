@@ -14,6 +14,43 @@
 		749A10EC216897A500A419EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749A10EA216897A500A419EB /* LaunchScreen.storyboard */; };
 		749A10F7216897A600A419EB /* SuppyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A10F6216897A600A419EB /* SuppyTests.swift */; };
 		749A1102216897A600A419EB /* SuppyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A1101216897A600A419EB /* SuppyUITests.swift */; };
+		749A11102168B48200A419EB /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A110F2168B48200A419EB /* ScannerViewController.swift */; };
+		749A11232168C2AA00A419EB /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A11192168C2A800A419EB /* QRCodeReaderViewController.swift */; };
+		749A11242168C2AA00A419EB /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A111A2168C2A900A419EB /* QRCodeReaderViewControllerBuilder.swift */; };
+		749A11252168C2AA00A419EB /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A111B2168C2A900A419EB /* QRCodeReaderView.swift */; };
+		749A11262168C2AA00A419EB /* QRCodeReaderViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A111C2168C2A900A419EB /* QRCodeReaderViewContainer.swift */; };
+		749A11272168C2AA00A419EB /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A111D2168C2A900A419EB /* ReaderOverlayView.swift */; };
+		749A11282168C2AA00A419EB /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A111E2168C2A900A419EB /* QRCodeReader.swift */; };
+		749A11292168C2AA00A419EB /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A111F2168C2AA00A419EB /* QRCodeReaderViewControllerDelegate.swift */; };
+		749A112A2168C2AA00A419EB /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A11202168C2AA00A419EB /* SwitchCameraButton.swift */; };
+		749A112B2168C2AA00A419EB /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A11212168C2AA00A419EB /* ToggleTorchButton.swift */; };
+		749A112C2168C2AA00A419EB /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A11222168C2AA00A419EB /* QRCodeReaderResult.swift */; };
+		749A11302168D0A900A419EB /* SupplyChainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A112F2168D0A900A419EB /* SupplyChainCell.swift */; };
+		749A11322168D0CE00A419EB /* SupplyChainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749A11312168D0CE00A419EB /* SupplyChainCell.xib */; };
+		749A11352168D25B00A419EB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A11342168D25B00A419EB /* Extensions.swift */; };
+		749A11382168D29500A419EB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A11372168D29500A419EB /* DetailsViewController.swift */; };
+		749A113B2168DE4800A419EB /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A113A2168DE4800A419EB /* Enums.swift */; };
+		749A113E2168E5D400A419EB /* BlockchainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A113D2168E5D400A419EB /* BlockchainHelper.swift */; };
+		749A11402168F23F00A419EB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749A113F2168F23F00A419EB /* Alamofire.framework */; };
+		749A11442168F7E400A419EB /* BitcoinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749A11432168F7E400A419EB /* BitcoinKit.framework */; };
+		749A114A2168FD3E00A419EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A11492168FD3E00A419EB /* Constants.swift */; };
+		749A114C2169019200A419EB /* AuthenticateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A114B2169019200A419EB /* AuthenticateViewController.swift */; };
+		749A114E2169195800A419EB /* SupplierSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A114D2169195800A419EB /* SupplierSelectViewController.swift */; };
+		749A11502169242800A419EB /* SupplyChainItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A114F2169242800A419EB /* SupplyChainItemBuilder.swift */; };
+		749A115221692B5800A419EB /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749A115121692B5700A419EB /* KeychainAccess.framework */; };
+		749A115421692C6F00A419EB /* CreateDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A115321692C6F00A419EB /* CreateDetailsViewController.swift */; };
+		749A11562169309000A419EB /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A11552169309000A419EB /* SuccessViewController.swift */; };
+		74EF7B9F21693F370051ECBA /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EF7B9E21693F370051ECBA /* IQKeyboardManager.framework */; };
+		74EF7BA12169406C0051ECBA /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EF7BA02169406C0051ECBA /* IQKeyboardManagerSwift.framework */; };
+		74EF7BA3216945D10051ECBA /* CO2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF7BA2216945D10051ECBA /* CO2Cell.swift */; };
+		74EF7BA5216945DD0051ECBA /* CO2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74EF7BA4216945DD0051ECBA /* CO2Cell.xib */; };
+		74EF7BA72169519C0051ECBA /* SupplyChainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF7BA62169519C0051ECBA /* SupplyChainItem.swift */; };
+		74EF7BA9216955800051ECBA /* SupplyChainCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74EF7BA8216955800051ECBA /* SupplyChainCell2.xib */; };
+		74EF7BAB21695A960051ECBA /* SupplyChainCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF7BAA21695A960051ECBA /* SupplyChainCell2.swift */; };
+		74EF7BAD2169F3290051ECBA /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF7BAC2169F3290051ECBA /* CustomError.swift */; };
+		80489B299A1C1CEFF8BEAA41 /* Pods_SuppyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2119D9AAAFE228A669C7830 /* Pods_SuppyUITests.framework */; };
+		8B9D377DB7708DEA4D846E04 /* Pods_SuppyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2264FF7F1DF28E2399ACC835 /* Pods_SuppyTests.framework */; };
+		FD94D320A75549CDC1A9C024 /* Pods_Suppy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BCB36459FD4548FCD50143 /* Pods_Suppy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +71,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2264FF7F1DF28E2399ACC835 /* Pods_SuppyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuppyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DD58BB406A223345A9B07C /* Pods-SuppyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuppyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuppyTests/Pods-SuppyTests.release.xcconfig"; sourceTree = "<group>"; };
+		479C7AEED2005E5EAC62DF18 /* Pods-SuppyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuppyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuppyTests/Pods-SuppyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59351E872F092B654E4B04AC /* Pods-SuppyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuppyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuppyUITests/Pods-SuppyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		749A10DE216897A300A419EB /* Suppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Suppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		749A10E1216897A300A419EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		749A10E3216897A300A419EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +88,45 @@
 		749A10FD216897A600A419EB /* SuppyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuppyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		749A1101216897A600A419EB /* SuppyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuppyUITests.swift; sourceTree = "<group>"; };
 		749A1103216897A600A419EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		749A110F2168B48200A419EB /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		749A11192168C2A800A419EB /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		749A111A2168C2A900A419EB /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerBuilder.swift; sourceTree = "<group>"; };
+		749A111B2168C2A900A419EB /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		749A111C2168C2A900A419EB /* QRCodeReaderViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewContainer.swift; sourceTree = "<group>"; };
+		749A111D2168C2A900A419EB /* ReaderOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		749A111E2168C2A900A419EB /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		749A111F2168C2AA00A419EB /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewControllerDelegate.swift; sourceTree = "<group>"; };
+		749A11202168C2AA00A419EB /* SwitchCameraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		749A11212168C2AA00A419EB /* ToggleTorchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		749A11222168C2AA00A419EB /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		749A112F2168D0A900A419EB /* SupplyChainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplyChainCell.swift; sourceTree = "<group>"; };
+		749A11312168D0CE00A419EB /* SupplyChainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SupplyChainCell.xib; sourceTree = "<group>"; };
+		749A11342168D25B00A419EB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		749A11372168D29500A419EB /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		749A113A2168DE4800A419EB /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		749A113D2168E5D400A419EB /* BlockchainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainHelper.swift; sourceTree = "<group>"; };
+		749A113F2168F23F00A419EB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		749A11432168F7E400A419EB /* BitcoinKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitcoinKit.framework; path = Carthage/Build/iOS/BitcoinKit.framework; sourceTree = SOURCE_ROOT; };
+		749A11492168FD3E00A419EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		749A114B2169019200A419EB /* AuthenticateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateViewController.swift; sourceTree = "<group>"; };
+		749A114D2169195800A419EB /* SupplierSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierSelectViewController.swift; sourceTree = "<group>"; };
+		749A114F2169242800A419EB /* SupplyChainItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplyChainItemBuilder.swift; sourceTree = "<group>"; };
+		749A115121692B5700A419EB /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = SOURCE_ROOT; };
+		749A115321692C6F00A419EB /* CreateDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDetailsViewController.swift; sourceTree = "<group>"; };
+		749A11552169309000A419EB /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		74EF7B9E21693F370051ECBA /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManager.framework; path = Carthage/Build/iOS/IQKeyboardManager.framework; sourceTree = SOURCE_ROOT; };
+		74EF7BA02169406C0051ECBA /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = SOURCE_ROOT; };
+		74EF7BA2216945D10051ECBA /* CO2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CO2Cell.swift; sourceTree = "<group>"; };
+		74EF7BA4216945DD0051ECBA /* CO2Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CO2Cell.xib; sourceTree = "<group>"; };
+		74EF7BA62169519C0051ECBA /* SupplyChainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplyChainItem.swift; sourceTree = "<group>"; };
+		74EF7BA8216955800051ECBA /* SupplyChainCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SupplyChainCell2.xib; sourceTree = "<group>"; };
+		74EF7BAA21695A960051ECBA /* SupplyChainCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplyChainCell2.swift; sourceTree = "<group>"; };
+		74EF7BAC2169F3290051ECBA /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		97DF3DFA83642D9A5CCC94C5 /* Pods-SuppyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuppyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuppyUITests/Pods-SuppyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA4088E58F8A061F3A388831 /* Pods-Suppy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suppy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Suppy/Pods-Suppy.release.xcconfig"; sourceTree = "<group>"; };
+		D2119D9AAAFE228A669C7830 /* Pods_SuppyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuppyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BCB36459FD4548FCD50143 /* Pods_Suppy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Suppy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC91A5322BD43B3C747B7382 /* Pods-Suppy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suppy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Suppy/Pods-Suppy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +134,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD94D320A75549CDC1A9C024 /* Pods_Suppy.framework in Frameworks */,
+				749A11442168F7E400A419EB /* BitcoinKit.framework in Frameworks */,
+				74EF7B9F21693F370051ECBA /* IQKeyboardManager.framework in Frameworks */,
+				749A115221692B5800A419EB /* KeychainAccess.framework in Frameworks */,
+				74EF7BA12169406C0051ECBA /* IQKeyboardManagerSwift.framework in Frameworks */,
+				749A11402168F23F00A419EB /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9D377DB7708DEA4D846E04 /* Pods_SuppyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +155,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80489B299A1C1CEFF8BEAA41 /* Pods_SuppyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10F9A541B6AFB331F2BE96DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8BCB36459FD4548FCD50143 /* Pods_Suppy.framework */,
+				2264FF7F1DF28E2399ACC835 /* Pods_SuppyTests.framework */,
+				D2119D9AAAFE228A669C7830 /* Pods_SuppyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		749A10D5216897A300A419EB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +179,8 @@
 				749A10F5216897A600A419EB /* SuppyTests */,
 				749A1100216897A600A419EB /* SuppyUITests */,
 				749A10DF216897A300A419EB /* Products */,
+				B89D96FC4513611D2B040304 /* Pods */,
+				10F9A541B6AFB331F2BE96DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +197,19 @@
 		749A10E0216897A300A419EB /* Suppy */ = {
 			isa = PBXGroup;
 			children = (
+				749A113C2168E5C100A419EB /* SupplyChain&Blockchain */,
+				749A11392168DE3A00A419EB /* Enums */,
+				749A11362168D27E00A419EB /* ViewControllers */,
+				749A11332168D24000A419EB /* Extensions */,
+				749A112E2168D07C00A419EB /* CustomViews */,
+				749A112D2168CF5F00A419EB /* QRReader */,
+				749A11112168B8B100A419EB /* Frameworks */,
 				749A10E1216897A300A419EB /* AppDelegate.swift */,
-				749A10E3216897A300A419EB /* ViewController.swift */,
 				749A10E5216897A300A419EB /* Main.storyboard */,
 				749A10E8216897A500A419EB /* Assets.xcassets */,
 				749A10EA216897A500A419EB /* LaunchScreen.storyboard */,
 				749A10ED216897A500A419EB /* Info.plist */,
+				749A11492168FD3E00A419EB /* Constants.swift */,
 			);
 			path = Suppy;
 			sourceTree = "<group>";
@@ -125,6 +232,102 @@
 			path = SuppyUITests;
 			sourceTree = "<group>";
 		};
+		749A11112168B8B100A419EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74EF7BA02169406C0051ECBA /* IQKeyboardManagerSwift.framework */,
+				74EF7B9E21693F370051ECBA /* IQKeyboardManager.framework */,
+				749A115121692B5700A419EB /* KeychainAccess.framework */,
+				749A11432168F7E400A419EB /* BitcoinKit.framework */,
+				749A113F2168F23F00A419EB /* Alamofire.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		749A112D2168CF5F00A419EB /* QRReader */ = {
+			isa = PBXGroup;
+			children = (
+				749A111E2168C2A900A419EB /* QRCodeReader.swift */,
+				749A11222168C2AA00A419EB /* QRCodeReaderResult.swift */,
+				749A111B2168C2A900A419EB /* QRCodeReaderView.swift */,
+				749A111C2168C2A900A419EB /* QRCodeReaderViewContainer.swift */,
+				749A11192168C2A800A419EB /* QRCodeReaderViewController.swift */,
+				749A111A2168C2A900A419EB /* QRCodeReaderViewControllerBuilder.swift */,
+				749A111F2168C2AA00A419EB /* QRCodeReaderViewControllerDelegate.swift */,
+				749A111D2168C2A900A419EB /* ReaderOverlayView.swift */,
+				749A11202168C2AA00A419EB /* SwitchCameraButton.swift */,
+				749A11212168C2AA00A419EB /* ToggleTorchButton.swift */,
+			);
+			path = QRReader;
+			sourceTree = "<group>";
+		};
+		749A112E2168D07C00A419EB /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				749A112F2168D0A900A419EB /* SupplyChainCell.swift */,
+				749A11312168D0CE00A419EB /* SupplyChainCell.xib */,
+				74EF7BA2216945D10051ECBA /* CO2Cell.swift */,
+				74EF7BA4216945DD0051ECBA /* CO2Cell.xib */,
+				74EF7BA8216955800051ECBA /* SupplyChainCell2.xib */,
+				74EF7BAA21695A960051ECBA /* SupplyChainCell2.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		749A11332168D24000A419EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				749A11342168D25B00A419EB /* Extensions.swift */,
+				74EF7BAC2169F3290051ECBA /* CustomError.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		749A11362168D27E00A419EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				749A10E3216897A300A419EB /* ViewController.swift */,
+				749A110F2168B48200A419EB /* ScannerViewController.swift */,
+				749A11372168D29500A419EB /* DetailsViewController.swift */,
+				749A114B2169019200A419EB /* AuthenticateViewController.swift */,
+				749A114D2169195800A419EB /* SupplierSelectViewController.swift */,
+				749A115321692C6F00A419EB /* CreateDetailsViewController.swift */,
+				749A11552169309000A419EB /* SuccessViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		749A11392168DE3A00A419EB /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				749A113A2168DE4800A419EB /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		749A113C2168E5C100A419EB /* SupplyChain&Blockchain */ = {
+			isa = PBXGroup;
+			children = (
+				749A113D2168E5D400A419EB /* BlockchainHelper.swift */,
+				749A114F2169242800A419EB /* SupplyChainItemBuilder.swift */,
+				74EF7BA62169519C0051ECBA /* SupplyChainItem.swift */,
+			);
+			path = "SupplyChain&Blockchain";
+			sourceTree = "<group>";
+		};
+		B89D96FC4513611D2B040304 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC91A5322BD43B3C747B7382 /* Pods-Suppy.debug.xcconfig */,
+				BA4088E58F8A061F3A388831 /* Pods-Suppy.release.xcconfig */,
+				479C7AEED2005E5EAC62DF18 /* Pods-SuppyTests.debug.xcconfig */,
+				22DD58BB406A223345A9B07C /* Pods-SuppyTests.release.xcconfig */,
+				59351E872F092B654E4B04AC /* Pods-SuppyUITests.debug.xcconfig */,
+				97DF3DFA83642D9A5CCC94C5 /* Pods-SuppyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 749A1106216897A600A419EB /* Build configuration list for PBXNativeTarget "Suppy" */;
 			buildPhases = (
+				449109F4C0C707231BB14759 /* [CP] Check Pods Manifest.lock */,
 				749A10DA216897A300A419EB /* Sources */,
 				749A10DB216897A300A419EB /* Frameworks */,
 				749A10DC216897A300A419EB /* Resources */,
+				749A11142168B8EC00A419EB /* ShellScript */,
+				5AF050EA94490D4FD32891B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 749A1109216897A600A419EB /* Build configuration list for PBXNativeTarget "SuppyTests" */;
 			buildPhases = (
+				BE7A58E53A91FB29CD64FD51 /* [CP] Check Pods Manifest.lock */,
 				749A10EE216897A600A419EB /* Sources */,
 				749A10EF216897A600A419EB /* Frameworks */,
 				749A10F0216897A600A419EB /* Resources */,
@@ -167,6 +374,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 749A110C216897A600A419EB /* Build configuration list for PBXNativeTarget "SuppyUITests" */;
 			buildPhases = (
+				ED9C9665DD3E2AADB283900F /* [CP] Check Pods Manifest.lock */,
 				749A10F9216897A600A419EB /* Sources */,
 				749A10FA216897A600A419EB /* Frameworks */,
 				749A10FB216897A600A419EB /* Resources */,
@@ -229,8 +437,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749A11322168D0CE00A419EB /* SupplyChainCell.xib in Resources */,
 				749A10EC216897A500A419EB /* LaunchScreen.storyboard in Resources */,
 				749A10E9216897A500A419EB /* Assets.xcassets in Resources */,
+				74EF7BA9216955800051ECBA /* SupplyChainCell2.xib in Resources */,
+				74EF7BA5216945DD0051ECBA /* CO2Cell.xib in Resources */,
 				749A10E7216897A300A419EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +462,157 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		449109F4C0C707231BB14759 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Suppy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AF050EA94490D4FD32891B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Suppy/Pods-Suppy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Suppy/Pods-Suppy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		749A11142168B8EC00A419EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BitcoinKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManager.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BitcoinKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KeychainAccess.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/IQKeyboardManagerSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/IQKeyboardManager.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		BE7A58E53A91FB29CD64FD51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuppyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED9C9665DD3E2AADB283900F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuppyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		749A10DA216897A300A419EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749A112B2168C2AA00A419EB /* ToggleTorchButton.swift in Sources */,
 				749A10E4216897A300A419EB /* ViewController.swift in Sources */,
+				749A11282168C2AA00A419EB /* QRCodeReader.swift in Sources */,
+				749A11502169242800A419EB /* SupplyChainItemBuilder.swift in Sources */,
+				749A11252168C2AA00A419EB /* QRCodeReaderView.swift in Sources */,
+				749A11272168C2AA00A419EB /* ReaderOverlayView.swift in Sources */,
+				749A113B2168DE4800A419EB /* Enums.swift in Sources */,
+				749A115421692C6F00A419EB /* CreateDetailsViewController.swift in Sources */,
+				749A11292168C2AA00A419EB /* QRCodeReaderViewControllerDelegate.swift in Sources */,
+				749A11302168D0A900A419EB /* SupplyChainCell.swift in Sources */,
+				749A11242168C2AA00A419EB /* QRCodeReaderViewControllerBuilder.swift in Sources */,
 				749A10E2216897A300A419EB /* AppDelegate.swift in Sources */,
+				749A114C2169019200A419EB /* AuthenticateViewController.swift in Sources */,
+				749A11262168C2AA00A419EB /* QRCodeReaderViewContainer.swift in Sources */,
+				74EF7BAB21695A960051ECBA /* SupplyChainCell2.swift in Sources */,
+				749A11352168D25B00A419EB /* Extensions.swift in Sources */,
+				749A11382168D29500A419EB /* DetailsViewController.swift in Sources */,
+				749A114E2169195800A419EB /* SupplierSelectViewController.swift in Sources */,
+				749A113E2168E5D400A419EB /* BlockchainHelper.swift in Sources */,
+				74EF7BA3216945D10051ECBA /* CO2Cell.swift in Sources */,
+				749A11232168C2AA00A419EB /* QRCodeReaderViewController.swift in Sources */,
+				74EF7BAD2169F3290051ECBA /* CustomError.swift in Sources */,
+				749A114A2168FD3E00A419EB /* Constants.swift in Sources */,
+				749A112C2168C2AA00A419EB /* QRCodeReaderResult.swift in Sources */,
+				749A112A2168C2AA00A419EB /* SwitchCameraButton.swift in Sources */,
+				749A11562169309000A419EB /* SuccessViewController.swift in Sources */,
+				749A11102168B48200A419EB /* ScannerViewController.swift in Sources */,
+				74EF7BA72169519C0051ECBA /* SupplyChainItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,10 +785,16 @@
 		};
 		749A1107216897A600A419EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC91A5322BD43B3C747B7382 /* Pods-Suppy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LVQ75DG6FL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Suppy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,10 +809,16 @@
 		};
 		749A1108216897A600A419EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA4088E58F8A061F3A388831 /* Pods-Suppy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LVQ75DG6FL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Suppy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +833,7 @@
 		};
 		749A110A216897A600A419EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 479C7AEED2005E5EAC62DF18 /* Pods-SuppyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +855,7 @@
 		};
 		749A110B216897A600A419EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DD58BB406A223345A9B07C /* Pods-SuppyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +877,7 @@
 		};
 		749A110D216897A600A419EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59351E872F092B654E4B04AC /* Pods-SuppyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +898,7 @@
 		};
 		749A110E216897A600A419EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97DF3DFA83642D9A5CCC94C5 /* Pods-SuppyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

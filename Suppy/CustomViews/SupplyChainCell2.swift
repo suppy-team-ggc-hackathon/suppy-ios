@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+class SupplyChainCell2: UITableViewCell {
+    
+    @IBOutlet weak var imageView1: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+}

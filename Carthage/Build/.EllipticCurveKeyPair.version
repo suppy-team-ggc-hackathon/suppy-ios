@@ -1,0 +1,21 @@
+{
+  "Mac" : [
+    {
+      "name" : "EllipticCurveKeyPair",
+      "hash" : "ddca28a3c4507f4896f83ac8588d8e5647a9978fc106a9cd6ce36c08254ad9c3"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.0.2",
+  "iOS" : [
+    {
+      "name" : "EllipticCurveKeyPair",
+      "hash" : "50093f735d00fa2479e83e024b56c3c3681895bafb5ee52355d0f46e50029409"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "9.0.1",
+  "iOS" : [
+    {
+      "name" : "QRCodeReader",
+      "hash" : "3cc2ef3071bcbd36d210272ba4580d431c9921be1fbd4dc57a7d3fb9c480ce65"
+    }
+  ]
+}

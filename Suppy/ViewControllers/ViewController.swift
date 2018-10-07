@@ -8,21 +8,54 @@
 
 import AVFoundation
 import UIKit
+import Alamofire
+import BitcoinKit
 
 class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
+    var latestItem: SupplyChainItem?
     
+    @IBOutlet weak var qrcodeScannerButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    @IBAction func scannerButtonPressed(_ sender: UIButton) {
         
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block:  { _ in
+//        do {
+//            // Generate mnemonic
+//            let mnemonic = try Mnemonic.generate()
+//
+//            let seed = Mnemonic.seed(mnemonic: mnemonic)
+//
+//            let wallet = HDWallet(seed: seed, network: .testnet)
+//
+//
+//
+//        } catch {
+//            print(error)
+//        }
+        
+//        BlockchainManager.sharedInstance.createAndSendSupplyChainItem(supplyChainItem: SupplyChainItem(date: Date(), prev_tx_ids: ["testaerwefwef"], latitude: 53.0, longitude: 13.0, supplier_id: "somestring", supplier_type: SupplierType.MANUFACTURER, product_type: ProductType.DELIVERY, product_title: "Some title", co2: 50.0))
+
+//        BlockchainManager.sharedInstance.fetchSupplyChain(cb: { (supplyChainItems, errror) in
+//            print(supplyChainItems.count)
+//        })
+        
+        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block:  { _ in
             self.doTheModalScan()
         })
+        
     }
-    @IBOutlet weak var previewView: QRCodeReaderView! {
-        didSet {
-            previewView.setupComponents(showCancelButton: false, showSwitchCameraButton: false, showTorchButton: false, showOverlayView: true, reader: reader)
-        }
+    
+    @IBAction func addSupplyButtonPressed(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "AuthenticateSegue", sender: nil)
     }
+    
     lazy var reader: QRCodeReader = QRCodeReader()
     lazy var readerVC: QRCodeReaderViewController = {
         let builder = QRCodeReaderViewControllerBuilder {
@@ -92,14 +125,38 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         reader.stopScanning()
         
         dismiss(animated: true) { [weak self] in
-            let alert = UIAlertController(
-                title: "QRCodeReader",
-                message: String (format:"%@ (of type %@)", result.value, result.metadataType),
-                preferredStyle: .alert
-            )
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//            let alert = UIAlertController(
+//                title: "QRCodeReader",
+//                message: String (format:"%@ (of type %@)", result.value, result.metadataType),
+//                preferredStyle: .alert
+//            )
+//            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             
-            self?.present(alert, animated: true, completion: nil)
+//            self?.present(alert, animated: true, completion: nil)
+            
+//            Alamofire.request(blockchainURL).responseJSON { response in
+//                print("Request: \(String(describing: response.request))")   // original url request
+//                print("Response: \(String(describing: response.response))") // http url response
+//                print("Result: \(response.result)")                         // response serialization result
+//
+//                if let json = response.result.value {
+//                    print("JSON: \(json)") // serialized json response
+//                }
+//
+//                if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {He
+//                    print("Data: \(utf8Text)") // original server data as UTF8 string
+//                }
+//            }
+            
+            BlockchainManager.sharedInstance.fetchEndProduct(cb: {(item:SupplyChainItem?, error: Error?) in
+                if let item = item {
+                    self?.latestItem = item
+                    self?.performSegue(withIdentifier: "DetailsSegue", sender: nil)
+                }else{
+                    print(error!)
+                }
+            })
+            
         }
     }
     
@@ -111,5 +168,21 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         reader.stopScanning()
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+            guard let identifier = segue.identifier else {
+                return
+            }
+            
+            switch identifier {
+                
+            case "DetailsSegue":
+                let destinationVC = segue.destination as! DetailsViewController
+                destinationVC.supplyChainItem = self.latestItem
+            default:
+                return
+        }
     }
 }

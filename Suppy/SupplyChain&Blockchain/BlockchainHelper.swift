@@ -11,57 +11,6 @@ import Alamofire
 import CoreLocation
 import SwiftyJSON
 
-
-class SupplyChainItem {
-    
-    var date: Date
-    var prev_tx_ids: [String]
-    var latitude: Double
-    var longitude: Double
-    var supplier_id: String
-    var supplier_type: SupplierType
-    var product_type: ProductType
-    var product_title: String
-    var co2: Double
-    
-    init(date: Date, prev_tx_ids: [String], latitude: Double, longitude: Double, supplier_id: String, supplier_type: SupplierType, product_type: ProductType, product_title: String, co2: Double){
-        
-        self.date = date
-        self.prev_tx_ids = prev_tx_ids
-        self.latitude = latitude
-        self.longitude = longitude
-        self.supplier_id = supplier_id
-        self.supplier_type = supplier_type
-        self.product_type = product_type
-        self.product_title = product_title
-        self.co2 = co2
-        
-    }
-
-    func getParameters() -> Parameters{
-        
-        let parameters: Parameters = [
-//            "date": self.date,
-//            "prev_tx_ids": self.prev_tx_ids,
-            "location": [
-                "lat": self.latitude,
-                "lng": self.longitude
-            ],
-            "supplier_id": self.supplier_id,
-//            "supplier_type": self.supplier_type,
-            "product_data": [
-//                "type": self.product_type,
-                "title": self.product_title
-            ],
-            "co2": self.co2
-        ]
-        
-        
-        return parameters
-    }
-    
-}
-
 class BlockchainManager{
     
     static let sharedInstance = BlockchainManager()
@@ -97,5 +46,103 @@ class BlockchainManager{
         }
     }
     
+    
+    func fetchSupplyChain(cb: @escaping ([SupplyChainItem],Error?) -> Void ) {
+        
+        let res = [SupplyChainItem]()
+        
+        guard let blockchainURL = self.blockchainURL else { cb(res,CustomErrors.blockchainURLNotDefined); return }
+        
+        let supplyChainURL = "\(blockchainURL)/tx"
+        
+        Alamofire.request(supplyChainURL, method: .get).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                
+                if let results = json["result"].array {
+                    for res in results {
+                        print(res["product_data"]["img"].string!.replacingOccurrences(of: "\\/", with: "/"))
+                    }
+                }
+                
+                print("JSON: \(json)")
+                cb(res, nil)
+            case .failure(let error):
+                cb(res,error)
+            }
+        }
+    }
+    
+    func fetchTxByID(id:String, cb: @escaping (SupplyChainItem?,Error?) -> Void ){
+        
+        guard let blockchainURL = self.blockchainURL else { cb(nil,CustomErrors.blockchainURLNotDefined); return }
+        
+        let supplyChainItemURL = "\(blockchainURL)/supply-chain/\(id)"
+        
+        Alamofire.request(supplyChainItemURL, method: .get).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                
+                print(json)
+                
+                if let item = SupplyChainItem.parseFromJSON(json: json) {
+                    print("made it!")
+                    cb(item,nil)
+                }else{
+                    cb(nil, CustomErrors.itemCouldNotBeFetched)
+                }
+                
+            case .failure(let error):
+                cb(nil,error)
+            }
+        }
+    }
+    
+    func fetchEndProduct(cb: @escaping (SupplyChainItem?,Error?) -> Void ){
+        
+        guard let blockchainURL = self.blockchainURL else { cb(nil,CustomErrors.blockchainURLNotDefined); return }
+        
+        let supplyChainItemURL = "\(blockchainURL)/end-product"
+        
+        Alamofire.request(supplyChainItemURL, method: .get).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                
+                print(json)
+                
+                if let item = SupplyChainItem.parseFromJSON(json: json) {
+                    print("made it!")
+                    cb(item,nil)
+                }else{
+                    cb(nil, CustomErrors.itemCouldNotBeFetched)
+                }
+                
+            case .failure(let error):
+                cb(nil,error)
+            }
+        }
+    }
+    
+    
+    func fetchOriginAndLocation(id:String, cb: @escaping (JSON?,Error?) -> Void ){
+        
+        guard let blockchainURL = self.blockchainURL else { cb(nil,CustomErrors.blockchainURLNotDefined); return }
+        
+        let url = "\(blockchainURL)/origin-and-location/\(id)"
+        
+        Alamofire.request(url, method: .get).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print(json)
+                cb(json,nil)
+            case .failure(let error):
+                cb(nil,error)
+            }
+        }
+    }
     
 }

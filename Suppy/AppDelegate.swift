@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        IQKeyboardManager.shared.enable = true
+        
+        // Setup some stuff
+//        BlockchainManager.sharedInstance.blockchainURL = "https://maas-proxy.cfapps.eu10.hana.ondemand.com/7e0d01a0-800f-4c39-9d7b-a98840602fc1/rpc"
+        
+        BlockchainManager.sharedInstance.blockchainURL = "http://46.101.160.179:1344"
+        
+        BlockchainManager.sharedInstance.apikey = "hzXszpRBRcGRZgm74JG7kSQjKb8Vdu6UASG6rpmdBTN5ycYgC6QZUX7TdwnWHReq"
+        
         return true
     }
 

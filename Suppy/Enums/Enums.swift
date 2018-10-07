@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+enum SupplierType: String {
+    case STORAGE = "STORAGE"
+    case PRODUCER = "PRODUCER"
+    case RETAIL = "RETAIL"
+    case TRANSPORT = "TRANSPORT"
+}
+
+enum ProductType {
+    case MINERAL
+    case END_PRODUCT
+    case DELIVERY
+}

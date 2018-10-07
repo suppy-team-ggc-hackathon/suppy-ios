@@ -22,6 +22,8 @@ class DetailsViewController: UIViewController {
     
     var supplyChainItem: SupplyChainItem?
     
+    var images = [UIImage]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,17 +35,28 @@ class DetailsViewController: UIViewController {
         
         tableView.delegate = self
         
-        // set initial location in Honolulu
-        let initialLocation = CLLocation(latitude: 13.0, longitude: 53.0)
+        self.images.append(UIImage(named: "banana")!)
+        self.images.append(UIImage(named: "pineapple")!)
+        self.images.append(UIImage(named: "kiwi")!)
         
-        let regionRadius: CLLocationDistance = 1000
-        func centerMapOnLocation(location: CLLocation) {
-            let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
-                                                      latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-            mapView.setRegion(coordinateRegion, animated: true)
-        }
-
+        
+        Timer.init(timeInterval: 0.5, repeats: false, block: { _ in
+            
+            let initialLocation = CLLocation(latitude: 30.201327, longitude: -1.279774)
+            let regionRadius: CLLocationDistance = 10000
+            
+            func centerMapOnLocation(location: CLLocation) {
+                let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
+                                                          latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+                self.mapView.setRegion(coordinateRegion, animated: true)
+            }
+            
+            centerMapOnLocation(location: initialLocation)
+        })
+        
+        
     }
+    
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
@@ -80,7 +93,7 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
             
             if let item = self.supplyChainItem {
                 
-                let prevTx = item.prev_tx_ids[indexPath.row]
+                let prevTx = item.prev_tx_ids[indexPath.row - 1]
                 
                 BlockchainManager.sharedInstance.fetchOriginAndLocation(id: prevTx, cb: {(json: JSON?, error: Error?) in
                     
@@ -90,7 +103,17 @@ extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
                         let titleData = json["result"]["product_data"]["title"].string
                         let descData = json["result"]["originAddress"].string
                         
-                        supplyChainCell.loadImage(url: imgURL!)
+                        let lat = json["result"]["location"]["lat"].double!
+                        let long = json["result"]["location"]["lon"].double!
+                        
+                        // show artwork on map
+                        let artwork = Artwork(title: titleData!,
+                                              locationName: descData!,
+                                              coordinate: CLLocationCoordinate2D(latitude: lat, longitude:long))
+                        self.mapView.addAnnotation(artwork)
+                        
+                        //supplyChainCell.loadImage(url: imgURL!)
+                        supplyChainCell.productImage.image = self.images[indexPath.row - 1]
                         supplyChainCell.descLabel.text = descData!
                         supplyChainCell.titleLabel.text = titleData!
                     }

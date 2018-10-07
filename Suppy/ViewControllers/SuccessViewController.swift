@@ -32,7 +32,7 @@ class SuccessViewController: UIViewController {
     
     @IBAction func newTxButtonPressed(_ sender: UIButton) {
         
-        let theVC = self.navigationController!.viewControllers[3]
+        let theVC = self.navigationController!.viewControllers[2]
         
         self.navigationController?.popToViewController(theVC, animated: true)
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		746A0E75216A400200397435 /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746A0E74216A400200397435 /* ArtWork.swift */; };
 		749A10E2216897A300A419EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A10E1216897A300A419EB /* AppDelegate.swift */; };
 		749A10E4216897A300A419EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A10E3216897A300A419EB /* ViewController.swift */; };
 		749A10E7216897A300A419EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 749A10E5216897A300A419EB /* Main.storyboard */; };
@@ -75,6 +76,7 @@
 		22DD58BB406A223345A9B07C /* Pods-SuppyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuppyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuppyTests/Pods-SuppyTests.release.xcconfig"; sourceTree = "<group>"; };
 		479C7AEED2005E5EAC62DF18 /* Pods-SuppyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuppyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuppyTests/Pods-SuppyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		59351E872F092B654E4B04AC /* Pods-SuppyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuppyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuppyUITests/Pods-SuppyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		746A0E74216A400200397435 /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
 		749A10DE216897A300A419EB /* Suppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Suppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		749A10E1216897A300A419EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		749A10E3216897A300A419EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		746A0E73216A3FEC00397435 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				746A0E74216A400200397435 /* ArtWork.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
 		749A10D5216897A300A419EB = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +207,7 @@
 		749A10E0216897A300A419EB /* Suppy */ = {
 			isa = PBXGroup;
 			children = (
+				746A0E73216A3FEC00397435 /* MapKit */,
 				749A113C2168E5C100A419EB /* SupplyChain&Blockchain */,
 				749A11392168DE3A00A419EB /* Enums */,
 				749A11362168D27E00A419EB /* ViewControllers */,
@@ -609,6 +620,7 @@
 				74EF7BAD2169F3290051ECBA /* CustomError.swift in Sources */,
 				749A114A2168FD3E00A419EB /* Constants.swift in Sources */,
 				749A112C2168C2AA00A419EB /* QRCodeReaderResult.swift in Sources */,
+				746A0E75216A400200397435 /* ArtWork.swift in Sources */,
 				749A112A2168C2AA00A419EB /* SwitchCameraButton.swift in Sources */,
 				749A11562169309000A419EB /* SuccessViewController.swift in Sources */,
 				749A11102168B48200A419EB /* ScannerViewController.swift in Sources */,

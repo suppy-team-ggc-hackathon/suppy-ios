@@ -35,7 +35,7 @@
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oew-s7-a39">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="Oew-s7-a39">
                         <rect key="frame" x="0.0" y="0.0" width="80" height="79.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="80" id="Blt-Pa-8wk"/>
@@ -62,4 +62,7 @@
             <point key="canvasLocation" x="-322.39999999999998" y="-83.658170914542737"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="banana" width="72" height="72"/>
+    </resources>
 </document>

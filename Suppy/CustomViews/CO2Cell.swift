@@ -19,7 +19,7 @@ class CO2Cell: UITableViewCell {
         self.selectionStyle = .none
         self.separatorInset = .zero
         bottomBar.layer.borderWidth = 1.0
-        bottomBar.layer.borderColor = Constants.greyDarker.cgColor
+        bottomBar.layer.borderColor = Constants.greyLight.cgColor
     }
     
 }
